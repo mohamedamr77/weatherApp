@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather/core/color.dart';
 import 'package:weather/core/image.dart';
+import 'package:weather/core/text.dart';
 import 'weather_forcast_widget/hourly_forecast_in_tabbarview.dart';
 import 'weather_forcast_widget/weekly_forecast_in_tabbarview.dart';
 
@@ -52,8 +53,8 @@ class _WeatherForecastTabsState extends State<WeatherForecastTabs> with TickerPr
                   unselectedLabelColor: ColorApp.greyLightColor,
                   controller: tabController,
                   tabs: [
-                    Tab(text: "Hourly Forecast",),
-                    Tab(text: "Weekly Forecast",),
+                    Tab(text: TextApp.hourlyForecastText,),
+                    Tab(text: TextApp.weeklyForecastText,),
 
                   ],),
               ),

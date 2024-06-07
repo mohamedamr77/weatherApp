@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather/core/color.dart';
+import 'package:weather/features/homeScreen/widget/circleTemprature/circle_temprature_text.dart';
 
 class AvgTemperature extends StatelessWidget {
   const AvgTemperature({super.key});
@@ -20,13 +21,7 @@ class AvgTemperature extends StatelessWidget {
             ),
           ),
         ),
-        Text(
-          '°',
-          style: TextStyle(
-            color:  ColorApp.whiteColor,
-            fontSize: MediaQuery.of(context).size.height*0.09,
-          ),
-        ),
+        CircleTemprature(size: MediaQuery.of(context).size.height*0.09,)
       ],
     );
   }

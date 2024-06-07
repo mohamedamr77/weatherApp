@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:weather/core/color.dart';
 
 import '../../../../core/image.dart';
+import '../circleTemprature/circle_temprature_text.dart';
 class WeeklyForecastInTabBarView extends StatelessWidget {
   const WeeklyForecastInTabBarView({super.key});
 
@@ -50,13 +51,8 @@ class WeeklyForecastInTabBarView extends StatelessWidget {
                         ),
                       ),
 
-                      Text(
-                        "°",
-                        style: TextStyle(
-                          color: ColorApp.whiteColor,
-                          fontSize: 25,
-                        ),
-                      ),
+                      CircleTemprature(size: 25),
+
                     ],
                   )
                 ],

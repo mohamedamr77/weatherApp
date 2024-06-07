@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:weather/core/text.dart';
+import 'package:weather/features/homeScreen/widget/circleTemprature/circle_temprature_text.dart';
 
 import '../../../core/color.dart';
 
@@ -10,35 +12,23 @@ class HighLowTemperature extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("H : 24",
+        Text("${TextApp.highText} : 24",
           style: TextStyle(
             color:  ColorApp.whiteColor,
             fontSize: MediaQuery.of(context).size.height*0.03,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Text(
-          '°',
-          style: TextStyle(
-            color:  ColorApp.whiteColor,
-            fontSize: MediaQuery.of(context).size.height*0.034,
-          ),
-        ),
+        CircleTemprature(size: MediaQuery.of(context).size.height*0.034,),
        const SizedBox(width: 10,),
-        Text("L : 18",
+        Text("${TextApp.lowText} : 18",
           style: TextStyle(
             color:  ColorApp.whiteColor,
             fontSize: MediaQuery.of(context).size.height*0.03,
             fontWeight: FontWeight.bold,
           ),
         ),
-        Text(
-          '°',
-          style: TextStyle(
-            color:  ColorApp.whiteColor,
-            fontSize: MediaQuery.of(context).size.height*0.034,
-          ),
-        ),
+        CircleTemprature(size: MediaQuery.of(context).size.height*0.034,),
       ],
     );
   }

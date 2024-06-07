@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:weather/core/color.dart';
 import 'package:weather/core/image.dart';
+import 'package:weather/core/text.dart';
 import 'package:weather/features/homeScreen/screen.dart';
 class InitalScreen extends StatelessWidget {
   const InitalScreen({super.key});
@@ -45,7 +46,7 @@ class InitalScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                   color:  ColorApp.goldenYellowColor,
                 ),
-                child: const Center(child: Text("Get Started",
+                child: const Center(child: Text(TextApp.getStartedText,
                   style: TextStyle(
                     fontSize: 25,
                     fontWeight: FontWeight.bold,

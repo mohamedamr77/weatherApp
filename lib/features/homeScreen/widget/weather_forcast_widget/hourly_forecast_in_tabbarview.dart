@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:weather/core/image.dart';
+import 'package:weather/features/homeScreen/widget/circleTemprature/circle_temprature_text.dart';
 import '../../../../core/color.dart';
 class HourlyForecastInTabBarView extends StatelessWidget {
   const HourlyForecastInTabBarView({super.key});
@@ -49,13 +50,7 @@ class HourlyForecastInTabBarView extends StatelessWidget {
                         ),
                       ),
 
-                      Text(
-                        "°",
-                        style: TextStyle(
-                          color: ColorApp.whiteColor,
-                          fontSize: 25,
-                        ),
-                      ),
+                      CircleTemprature(size: 25),
                     ],
                   )
                 ],
