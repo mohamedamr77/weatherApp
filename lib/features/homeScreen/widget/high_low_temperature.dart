@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../core/color.dart';
+
 class HighLowTemperature extends StatelessWidget {
   const HighLowTemperature({super.key});
 
@@ -10,7 +12,7 @@ class HighLowTemperature extends StatelessWidget {
       children: [
         Text("H : 24",
           style: TextStyle(
-            color: Colors.white,
+            color:  ColorApp.whiteColor,
             fontSize: MediaQuery.of(context).size.height*0.03,
             fontWeight: FontWeight.bold,
           ),
@@ -18,14 +20,14 @@ class HighLowTemperature extends StatelessWidget {
         Text(
           '°',
           style: TextStyle(
-            color: Colors.white,
+            color:  ColorApp.whiteColor,
             fontSize: MediaQuery.of(context).size.height*0.034,
           ),
         ),
-        SizedBox(width: 10,),
+       const SizedBox(width: 10,),
         Text("L : 18",
           style: TextStyle(
-            color: Colors.white,
+            color:  ColorApp.whiteColor,
             fontSize: MediaQuery.of(context).size.height*0.03,
             fontWeight: FontWeight.bold,
           ),
@@ -33,7 +35,7 @@ class HighLowTemperature extends StatelessWidget {
         Text(
           '°',
           style: TextStyle(
-            color: Colors.white,
+            color:  ColorApp.whiteColor,
             fontSize: MediaQuery.of(context).size.height*0.034,
           ),
         ),

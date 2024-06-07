@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/core/color.dart';
 
 class AvgTemperature extends StatelessWidget {
   const AvgTemperature({super.key});
@@ -13,7 +14,7 @@ class AvgTemperature extends StatelessWidget {
           child: Text(
             '19',
             style: TextStyle(
-              color: Colors.white,
+              color: ColorApp.whiteColor,
               fontSize: MediaQuery.of(context).size.height*0.1,
               fontWeight: FontWeight.bold,
             ),
@@ -22,7 +23,7 @@ class AvgTemperature extends StatelessWidget {
         Text(
           '°',
           style: TextStyle(
-            color: Colors.white,
+            color:  ColorApp.whiteColor,
             fontSize: MediaQuery.of(context).size.height*0.09,
           ),
         ),

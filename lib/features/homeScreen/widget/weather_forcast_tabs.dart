@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:weather/core/color.dart';
 import 'weather_forcast_widget/hourly_forecast_in_tabbarview.dart';
 import 'weather_forcast_widget/weekly_forecast_in_tabbarview.dart';
 
@@ -35,8 +35,8 @@ class _WeatherForecastTabsState extends State<WeatherForecastTabs> with TickerPr
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
                   colors: [
-                    Color(0xff2E335A).withOpacity(0.9),
-                    Color(0xff1C1B33).withOpacity(0.9),
+                   ColorApp.midnightBlueColor.withOpacity(0.9),
+                   ColorApp.deepBlueColor.withOpacity(0.9),
                   ]
               )
           ),
@@ -47,8 +47,8 @@ class _WeatherForecastTabsState extends State<WeatherForecastTabs> with TickerPr
                 width: double.infinity,
                 height: 65,
                 child: TabBar(
-                  labelColor: Colors.purple,
-                  unselectedLabelColor: Colors.grey,
+                  labelColor: ColorApp.purpleColor,
+                  unselectedLabelColor: ColorApp.greyLightColor,
                   controller: tabController,
                   tabs: [
                     Tab(text: "Hourly Forecast",),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/core/color.dart';
 
 class CityName extends StatelessWidget {
   const CityName({super.key});
@@ -8,7 +9,7 @@ class CityName extends StatelessWidget {
     return Text(
       "Montreal",
       style: TextStyle(
-        color: Colors.white,
+        color: ColorApp.whiteColor,
         fontSize: MediaQuery.of(context).size.height*0.05,
         fontWeight: FontWeight.w500,
       ),

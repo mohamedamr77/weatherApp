@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import '../../../../core/color.dart';
 class HourlyForecastInTabBarView extends StatelessWidget {
   const HourlyForecastInTabBarView({super.key});
 
@@ -19,7 +19,7 @@ class HourlyForecastInTabBarView extends StatelessWidget {
               width: MediaQuery.of(context).size.width*0.17,
               //height: MediaQuery.of(context).size.height*1,
               decoration: BoxDecoration(
-                color: Color(0xff48319D).withOpacity(0.8),
+                color: ColorApp.deepVioletColor.withOpacity(0.8),
                 borderRadius: BorderRadius.circular(30),
               ),
               child: const Column(
@@ -27,9 +27,9 @@ class HourlyForecastInTabBarView extends StatelessWidget {
                 children: [
                   Padding(
                     padding:  EdgeInsets.only(top: 12),
-                    child: Text("12 AM",
+                    child: Text( "12 AM" ,
                       style: TextStyle(
-                        color: Colors.white,
+                        color: ColorApp.whiteColor,
                         fontWeight: FontWeight.bold,
                         fontSize: 14,
                       ),
@@ -42,7 +42,7 @@ class HourlyForecastInTabBarView extends StatelessWidget {
                       Text(
                         "12",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: ColorApp.whiteColor,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
@@ -51,7 +51,7 @@ class HourlyForecastInTabBarView extends StatelessWidget {
                       Text(
                         "°",
                         style: TextStyle(
-                          color: Colors.white,
+                          color: ColorApp.whiteColor,
                           fontSize: 25,
                         ),
                       ),
@@ -62,7 +62,8 @@ class HourlyForecastInTabBarView extends StatelessWidget {
             ),
           ),
           //separatorBuilder: (context, index) => SizedBox(width: 10,),
-          itemCount: 10),
+          itemCount: 10,
+      ),
     );
   }
 }
