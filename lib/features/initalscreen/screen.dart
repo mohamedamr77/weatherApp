@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/features/homeScreen/screen.dart';
 
 class InitalScreen extends StatelessWidget {
   const InitalScreen({super.key});
@@ -33,7 +34,7 @@ class InitalScreen extends StatelessWidget {
 
             GestureDetector(
               onTap: (){
-
+            Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
               },
               child: Container(
                padding: const EdgeInsets.all(20),
