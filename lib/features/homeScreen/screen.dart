@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/core/image.dart';
 import 'package:weather/features/homeScreen/widget/avg_temperature.dart';
 import 'package:weather/features/homeScreen/widget/temperature_conditions.dart';
 import 'widget/city_name.dart';
@@ -16,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         height: double.infinity,
         decoration:const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/images/background2.jpg",),
+            image: AssetImage(ImageApp.backGroundImage,),
             fit:BoxFit.cover,
           )
         ),

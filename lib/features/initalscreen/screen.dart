@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/core/image.dart';
 import 'package:weather/features/homeScreen/screen.dart';
 
 class InitalScreen extends StatelessWidget {
@@ -22,7 +23,7 @@ class InitalScreen extends StatelessWidget {
 
             const Expanded(
               flex: 3,
-              child: Image(image: AssetImage("assets/images/iconinitalscreen.png"),
+              child: Image(image: AssetImage(ImageApp.iconInitalScreenImage),
                 width: 300,
                 height: 400,
               ),
@@ -30,7 +31,7 @@ class InitalScreen extends StatelessWidget {
 
             Expanded(
                 flex: 2,
-                child: Image.asset("assets/images/text Weather ForeCasts.png")),
+                child: Image.asset(ImageApp.textWeatherForeCastImage)),
 
             GestureDetector(
               onTap: (){
@@ -52,7 +53,7 @@ class InitalScreen extends StatelessWidget {
                 )),
               ),
             ),
-            
+
           ],
 
         ),

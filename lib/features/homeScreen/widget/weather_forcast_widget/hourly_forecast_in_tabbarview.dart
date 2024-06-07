@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather/core/image.dart';
 import '../../../../core/color.dart';
 class HourlyForecastInTabBarView extends StatelessWidget {
   const HourlyForecastInTabBarView({super.key});
@@ -35,7 +36,7 @@ class HourlyForecastInTabBarView extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Image(image: AssetImage("assets/images/Moon cloud mid rain.png")),
+                  Image(image: AssetImage(ImageApp.moonCloudMidRainImage)),
                   Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
