@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:weather/core/color.dart';
 import 'package:weather/core/image.dart';
 import 'package:weather/core/text.dart';
+import 'package:weather/features/BottomNavigationbar/screen.dart';
 import 'package:weather/features/homeScreen/screen.dart';
 class InitalScreen extends StatelessWidget {
   const InitalScreen({super.key});
@@ -37,7 +38,7 @@ class InitalScreen extends StatelessWidget {
 
             GestureDetector(
               onTap: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context) => HomeScreen(),));
+            Navigator.push(context, MaterialPageRoute(builder: (context) => BottomNavigationBarScreen(),));
               },
               child: Container(
                 padding: const EdgeInsets.all(10),

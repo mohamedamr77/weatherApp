@@ -16,20 +16,20 @@ class HomeScreen extends StatelessWidget {
         width: double.infinity,
         height: double.infinity,
         decoration:const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage(ImageApp.backGroundImage,),
-            fit:BoxFit.cover,
-          )
+            image: DecorationImage(
+              image: AssetImage(ImageApp.backGroundImage,),
+              fit:BoxFit.cover,
+            )
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-              SizedBox(height:  MediaQuery.of(context).size.height*0.1,),
-              CityName(),
-              AvgTemperature(),
-              TemperatureConditions(),
-              HighLowTemperature(),
-              WeatherForecastTabs(),
+            SizedBox(height:  MediaQuery.of(context).size.height*0.1,),
+            CityName(),
+            AvgTemperature(),
+            TemperatureConditions(),
+            HighLowTemperature(),
+            WeatherForecastTabs(),
           ],
         ),
       ),
